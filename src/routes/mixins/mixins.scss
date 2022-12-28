@@ -4,11 +4,11 @@
   }
 }
 
-.super-funky-text {
-  @include modifier(funky-text) {
+.ui-p {
+  @include modifier(super-funky-text) {
     color: red;
+    font-family: 'Courier New', Courier, monospace;
   }
-  font-size: 16px; // Best way to make this global?
 }
 
 .test-placeholder {
