@@ -1,0 +1,51 @@
+@import 'biuty/core';
+@import 'modifiers';
+@import '../app.scss';
+
+@import '../routes/mediaQueries/mediaQueries.scss';
+@import '../routes/mixins/mixins.scss';
+@import '../components/navigation/navigation.scss';
+
+// Global Classes
+
+.underline {
+  text-decoration: underline;
+}
+
+.ui-markdown--emphasis {
+  font-weight: bold;
+}
+
+// ============ Media Queries
+
+// query is just short of media-query, the @include just imports it
+.test {
+  @include query(xl, 32px) {
+    // Why is the min-width second, be better first??
+    background: red;
+  }
+  @include query(xs) {
+    background: blue;
+  }
+  @include query(xxs) {
+    background: green;
+  }
+}
+
+// Outputs
+
+// .test {
+// background: green;
+// }
+
+// @media screen and (min-width: 376px) {
+// .test {
+//   background: blue;
+// }
+// }
+
+// @media screen and (min-width: 32px) and (max-width: 1199px) {
+// .test {
+//   background: red;
+// }
+// }

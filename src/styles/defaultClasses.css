@@ -1,0 +1,36 @@
+/* Available classes reference
+
+.flex: display: flex;
+.grid: display: grid;
+.none: display: none;
+.block: display: block;
+.wrap: flex-wrap: wrap;
+.nowrap: flex-wrap: nowrap;
+.wrap-rev: flex-wrap: wrap-reverse;
+.flex-row: flex-direction: row;
+.flex-col: flex-direction: column;
+.flex-col-rev: flex-direction: column-reverse;
+.flex-row-rev: flex-direction: row-reverse;
+.grid-row: flex-direction: row-reverse;
+.grid-row: grid-auto-flow: row;
+.grid-col: grid-auto-flow: column;
+.grid-dense: grid-auto-flow: dense;
+.flex-none: flex: none;
+.flex-auto: flex: 1 1 auto;
+.justify-between: justify-content: space-between;
+.justify-start: justify-content: flex-start;
+.justify-end: justify-content: flex-end;
+.justify-stretch: justify-content: stretch;
+.justify-center: justify-content: center;
+.items-center: align-items: center;
+.items-start: align-items: flex-start;
+.items-end: align-items: flex-end;
+.items-stretch: align-items: stretch;
+.self-center: align-self: center;
+.self-start: align-self: flex-start;
+.self-end: align-self: flex-end;
+.self-stretch: align-self: stretch;
+.cols-{1..12}: grid-template-columns: repeat(1..12, 1fr);
+.col-{1..12}: grid-column: span 1..12;
+.vgap-{1..7}: row-gap: 4..94px;
+.hgap-{1..7}: column-gap: 4..94px; */

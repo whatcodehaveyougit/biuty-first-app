@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/main.scss';
+import { Route, Routes } from 'react-router-dom';
+import Home from './routes/home/home.component'
+import Mixins from './routes/mixins/mixins'
+import Suggestions from './routes/suggestions/suggestions'
+import Navigation from './components/navigation/navigation';
+import MediaQueries from './routes/mediaQueries/mediaQueries';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Navigation />
+        <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/mixins' element={<Mixins />} />
+            <Route path='/suggestions' element={<Suggestions />} />
+            <Route path='/media-queries' element={<MediaQueries />} />
+        </Routes>
     </div>
   );
 }

@@ -1,0 +1,31 @@
+@import 'biuty/core';
+
+.test-title {
+  @include query(32px) {
+    background: red;
+  }
+  @include query(xs) {
+    background: blue;
+  }
+  @include query(xxs) {
+    background: green;
+  }
+}
+
+// Outputs
+
+.test-title {
+  background: green;
+}
+
+@media screen and (min-width: 376px) {
+  .test-title {
+    background: blue;
+  }
+}
+
+@media screen and (min-width: 32px) and (max-width: 1199px) {
+  .test-title {
+    background: red;
+  }
+}

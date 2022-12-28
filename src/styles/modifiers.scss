@@ -1,0 +1,6 @@
+.App {
+  @include modifier(funky-text) {
+    color: red;
+    font-family: monospace;
+  }
+}
