@@ -48,6 +48,14 @@ const Home = () => {
             <UITitle level='3' label='Title' />
             <UITitle level='3' label='Title' />
           </div>
+          <div>
+            <h3 className='extending-built-in-class'>Extending a built in class</h3>
+          </div>
+          <div className='extending-built-in-class-container'>
+            <div>test1</div>
+            <div>test2</div>
+            <div>test3</div>
+          </div>
         </div>
     </>
   )

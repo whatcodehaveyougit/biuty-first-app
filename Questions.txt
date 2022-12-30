@@ -44,3 +44,36 @@ https://openizr.gitbook.io/biuty/styling/templates
  @include query(xl, 32px) { Turn these around surely??
     background: red;
   }
+
+
+  ==========================
+
+https://openizr.gitbook.io/biuty/styling/mixins
+
+.test {
+    @include extend(flex-auto xl\:col-1);
+}
+
+// Outputs
+
+.flex-auto, .test {
+  --flex: 1 1 auto;
+}
+
+.xl\:col-1, .test {
+  --span: 1;
+}
+
+[class*='flex-auto'] > *, .test > * {
+  flex: var(--flex);
+}
+
+[class*='col-'], .test {
+  grid-column: span var(--span);
+}
+
+What exactly does this do???? Pretty complex css!!
+
+==========================
+
+home.scss - works but looks wierd on dev tools.

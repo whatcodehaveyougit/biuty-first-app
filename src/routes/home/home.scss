@@ -1,0 +1,7 @@
+.extending-built-in-class {
+  @include extend(flex-auto xl\:col-1);
+}
+
+.extending-built-in-class-container {
+  @include extend(flex); // This works but looks really wierd on dev tools
+}

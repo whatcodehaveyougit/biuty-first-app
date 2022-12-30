@@ -9,7 +9,7 @@ const Mixins = () => {
   return (
     <>
       <div>
-        <UITitle level='3' label='Mixins, questions' />
+        <UITitle level='3' label='Mixins, are modifiers..?' />
         <UIP modifiers='' label='Ellipsis, label, where do I find the default styles etc?' />
         <UIP modifiers='funky-text' label='This is some funky text, but how do I make it red?' />
         <UIP modifiers='super-funky-text' label='This is super funky text' />
