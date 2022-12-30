@@ -4,10 +4,22 @@
   }
 }
 
+// This means that ui-p--super-funky-text will have these styles
+// Still not sure of the benifit of this not just being a normal class..
 .ui-p {
   @include modifier(super-funky-text) {
     color: red;
     font-family: 'Courier New', Courier, monospace;
+  }
+}
+
+.ui-button {
+  @include modifier(btn) {
+    background-color: white;
+    padding: 10px 20px;
+  }
+  @include modifier(success) {
+    background-color: green;
   }
 }
 

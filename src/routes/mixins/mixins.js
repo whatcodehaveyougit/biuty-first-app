@@ -15,7 +15,12 @@ const Mixins = () => {
         <UIP modifiers='super-funky-text' label='This is super funky text' />
         <p className='test-placeholder'>This is styled using a Placeholder</p>
         <div className='margin-top-1'>
-          <UIButton type='submit' label='Click me' onClick={() => setButtonState(buttonState => !buttonState) } modifiers={buttonState ? 'btn btn-success' : 'btn'} />
+          <UIButton
+            type='submit'
+            label='Click Me'
+            onClick={() => setButtonState(buttonState => !buttonState) }
+            modifiers={buttonState ? 'btn success' : 'btn'} >
+            </UIButton>
         </div>
       </div>
     </>
