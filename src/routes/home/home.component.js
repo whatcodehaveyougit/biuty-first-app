@@ -42,7 +42,7 @@ const Home = () => {
               // onFocus={myFocusHandler}
             />
             <UITitle level='1' label='' />
-
+            <div className="block">This will be display block, using the default classes</div>
           </div>
           <div className='flex'>
             <UITitle level='3' label='Title' />

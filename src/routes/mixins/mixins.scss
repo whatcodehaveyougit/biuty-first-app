@@ -16,15 +16,22 @@
 .ui-button {
   @include modifier(btn) {
     background-color: white;
+    color: black;
     padding: 10px 20px;
   }
   @include modifier(success) {
     background-color: green;
   }
-}
-
-.test-placeholder {
-  @extend %test_placeholder;
+  @include modifier(delete) {
+    background-color: red;
+  }
+  @include modifier(primary) {
+    background-color: blue;
+    color: white;
+  }
+  @include modifier(disabled) {
+    @extend %disabled;
+  }
 }
 
 // .ui-button--btn {

@@ -10,8 +10,12 @@ $gaps: (
 
 //  =========== Placeholders ===========
 
-%test_placeholder {
-  color: orange;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-decoration: dashed;
+%hover_state_underline {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+%disabled {
+  opacity: 0.5;
+  pointer-events: none;
 }

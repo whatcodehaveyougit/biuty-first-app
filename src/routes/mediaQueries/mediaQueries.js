@@ -5,7 +5,7 @@ const MediaQueries = () => {
   return (
     <>
       <div>
-        <UIP label='Test title' modifiers='test-title' />
+        <div class='media-query-test'>Media Query Test</div>
       </div>
     </>
   )

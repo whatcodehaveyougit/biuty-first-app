@@ -1,0 +1,46 @@
+To what extent are we using BEM?
+
+For example in FURET, I saw this class:
+modal__content__close-button
+
+But then I can't find any styles for it.
+
+Also this class:
+ui-options__wrapper__button
+
+Again no styles.
+Furthermore, here why do we use the HTML button element instead of the UIButton element?
+We are using this class instead of the UIButton with modifiers, but then these are used elsewhere..
+
+Surely we should be looking for consistancy here?
+
+
+==============================================
+
+Example?
+
+https://openizr.gitbook.io/biuty/styling/templates
+
+
+===============================================
+
+(
+  xxs: 0px, --- This surely should not be zero????
+  xs: 376px,
+  s: 576px,
+  m: 768px,
+  l: 992px,
+  xl: 1200px,
+)
+
+==========
+
+@media screen and (min-width: 32px) and (max-width: 1199px) {
+//   .media-query-test {
+//     background: red;
+//   }
+// }
+
+ @include query(xl, 32px) { Turn these around surely??
+    background: red;
+  }

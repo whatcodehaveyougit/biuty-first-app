@@ -1,31 +1,37 @@
 @import 'biuty/core';
 
-.test-title {
-  @include query(32px) {
-    background: red;
+.media-query-test {
+  color: white;
+  @include query(m) {
+    // min width from 778px
+    background-color: red;
   }
-  @include query(xs) {
-    background: blue;
+  @include query(m, xs) {
+    // from xs to m, be blue
+    background-color: blue;
   }
-  @include query(xxs) {
-    background: green;
+  @include query(xs, xxs) {
+    // from 0 to xs, do this.
+    background-color: green;
   }
 }
 
 // Outputs
 
-.test-title {
-  background: green;
-}
+// @media screen and (min-width: 376px) {
+//   .media-query-test {
+//     background: blue;
+//   }
+// }
 
-@media screen and (min-width: 376px) {
-  .test-title {
-    background: blue;
-  }
-}
+// @media screen and (min-width: 32px) and (max-width: 1199px) {
+//   .media-query-test {
+//     background: red;
+//   }
+// }
 
-@media screen and (min-width: 32px) and (max-width: 1199px) {
-  .test-title {
-    background: red;
-  }
-}
+// @media screen and (min-width: 32px) and (max-width: 1199px) {
+//   .test {
+//     background: red;
+//   }
+// }
