@@ -56,6 +56,12 @@ const Home = () => {
             <div>test2</div>
             <div>test3</div>
           </div>
+          <div className="grid cols-1 m:cols-3 xl:cols-12">
+              <div>hello</div>
+              <div>helloWorld</div>
+              <div>helloWorld</div>
+
+          </div>
         </div>
     </>
   )

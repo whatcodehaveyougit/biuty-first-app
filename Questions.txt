@@ -19,6 +19,7 @@ Surely we should be looking for consistancy here?
 
 Example?
 
+Cannot find a template file in furet..
 https://openizr.gitbook.io/biuty/styling/templates
 
 
@@ -35,16 +36,16 @@ https://openizr.gitbook.io/biuty/styling/templates
 
 ==========
 
+
+ @include query(xl, 32px) { Turn these around surely??????????
+    background: red;
+  }
+
 @media screen and (min-width: 32px) and (max-width: 1199px) {
 //   .media-query-test {
 //     background: red;
 //   }
 // }
-
- @include query(xl, 32px) { Turn these around surely??
-    background: red;
-  }
-
 
   ==========================
 
@@ -77,3 +78,7 @@ What exactly does this do???? Pretty complex css!!
 ==========================
 
 home.scss - works but looks wierd on dev tools.
+
+============================
+
+grid-test-6 - does not work
